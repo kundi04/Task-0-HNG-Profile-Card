@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <figure class="profile-avatar">
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Profile picture of Keisha Adams"
+        data-testid="test-user-avatar"
+      />
+      <figcaption>
+        <label for="avatarUpload" class="upload-label" tabindex="0">
+          Change Avatar
+        </label>
+        <input
+          type="file"
+          id="avatarUpload"
+          accept="image/*"
+          aria-label="Upload profile picture"
+        />
+      </figcaption>
+    </figure>
+
+    <section class="profile-details">
+      <header>
+        <h2 data-testid="test-user-name">Keisha Adams</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        A passionate web developer who loves creating clean, accessible designs and exploring new technologies.
+      </p>
+
+      <p class="time">
+        Current Time (ms): <span data-testid="test-user-time"></span>
+      </p>
+
+      <nav aria-label="User social media">
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="hobbies-title" class="hobbies">
+        <h3 id="hobbies-title">Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Photography</li>
+          <li>Hiking</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="dislikes-title" class="dislikes">
+        <h3 id="dislikes-title">Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Slow Wi-Fi</li>
+          <li>Spam emails</li>
+        </ul>
+      </section>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
