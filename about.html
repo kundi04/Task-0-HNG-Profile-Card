@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main data-testid="test-about-page">
+    <section class="about-card" aria-labelledby="bio-title">
+      <h2 id="bio-title">Bio</h2>
+      <p data-testid="test-about-bio">
+        I'm Keisha, a web developer with a love for accessible, responsive design. I enjoy turning ideas into delightful user experiences.
+      </p>
+    </section>
+
+    <section class="about-card" aria-labelledby="goals-title">
+      <h2 id="goals-title">Goals in this program</h2>
+      <ul data-testid="test-about-goals">
+        <li>Build a solid foundation in JavaScript and modern web practices.</li>
+        <li>Improve accessibility and semantic HTML skills.</li>
+        <li>Create portfolio-ready projects.</li>
+      </ul>
+    </section>
+
+    <section class="about-card" aria-labelledby="confidence-title">
+      <h2 id="confidence-title">Areas of low confidence</h2>
+      <p data-testid="test-about-confidence">
+        I want to improve my backend integration and testing skills. Sometimes I feel unsure when debugging complex state issues.
+      </p>
+    </section>
+
+    <section class="about-card" aria-labelledby="future-title">
+      <h2 id="future-title">Note to future self</h2>
+      <p data-testid="test-about-future-note">
+        Keep learning consistently. Small daily progress compounds into large wins.
+      </p>
+    </section>
+
+    <section class="about-card" aria-labelledby="extra-title">
+      <h2 id="extra-title">Extra thoughts</h2>
+      <p data-testid="test-about-extra">Gratitude, curiosity, and a habit of building will take you far.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
